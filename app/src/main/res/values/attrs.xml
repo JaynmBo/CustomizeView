@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="annulusColor" format="color"/>
+    <attr name="loadColor" format="color"/>
+    <attr name="annulusWidth" format="dimension"/>
+    <attr name="progress" format="integer"/>
+    <attr name="textColor" format="color"/>
+    <attr name="textSize" format="dimension"/>
+    <attr name="progressType">
+        <enum name="fill" value="0"/>
+        <enum name="stroke" value="1"/>
+    </attr>
+    <attr name="isShowText">
+        <enum name="yes" value="0"/>
+        <enum name="no" value="1"/>
+    </attr>
+
+    <declare-styleable name="AnnulusCustomizeView">
+        <attr name="annulusColor"/>
+        <attr name="loadColor"/>
+        <attr name="annulusWidth"/>
+        <attr name="progress"/>
+        <attr name="textColor"/>
+        <attr name="textSize"/>
+        <attr name="progressType"/>
+        <attr name="isShowText"/>
+    </declare-styleable>
+
+</resources>

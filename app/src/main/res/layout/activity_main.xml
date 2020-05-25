@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--<com.caobo.customizeview.view.CustomizeView
+        android:layout_margin="10dp"
+        android:id="@+id/view01"
+        android:padding="20dp"
+        app:spaceSize="10sp"
+        app:backgroundColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textColor="@color/colorContext"
+        app:textTitle="标题宽度大于图片宽度"
+        app:textTitleSize="20dp"
+        app:imageRes="@mipmap/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.caobo.customizeview.view.CustomizeView
+        android:layout_margin="10dp"
+        android:id="@+id/view02"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        app:spaceSize="10sp"
+        app:backgroundColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view01"
+        app:textColor="@color/colorYellow"
+        app:textTitle="标题宽度小于图片"
+        app:textTitleSize="14dp"
+        app:imageRes="@mipmap/image_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.caobo.customizeview.view.CustomizeView
+        android:layout_margin="10dp"
+        android:id="@+id/view03"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        app:spaceSize="10sp"
+        app:backgroundColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view02"
+        app:textColor="@color/colorAccent"
+        app:textTitle="听妈妈说标题太长会有傻子跟着念，这是真的吗？"
+        app:textTitleSize="20dp"
+        app:imageRes="@mipmap/image_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <com.caobo.customizeview.view.AnnulusCustomizeView
+        android:id="@+id/mAnnulusCustomizeView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:padding="20dp"
+        app:isShowText="no"
+        app:annulusColor="#CC1000"
+        app:annulusWidth="10dp"
+        app:loadColor="#00AA00"
+        app:progress="0"
+        app:progressType="stroke"
+        app:textColor="#DF9312"
+        app:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.caobo.customizeview.view.AnnulusCustomizeView
+        android:id="@+id/mAnnulusCustomizeView2"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="20dp"
+        app:isShowText="yes"
+        app:annulusColor="#2211aa"
+        app:annulusWidth="2dp"
+        app:loadColor="#A1DDE1"
+        app:progress="0"
+        app:progressType="fill"
+        app:textColor="#FF00AA"
+        app:textSize="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.caobo.customizeview.view.AnnulusCustomizeView
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/mAnnulusCustomizeView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:padding="20dp"
+        app:isShowText="yes"
+        app:annulusColor="#BB1"
+        app:annulusWidth="15dp"
+        app:loadColor="#CCC"
+        app:progress="0"
+        app:progressType="stroke"
+        app:textColor="#000000"
+        app:textSize="50dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
