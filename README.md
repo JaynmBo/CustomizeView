@@ -7,9 +7,9 @@ Android 自定义 View 是高级进阶不可或缺的内容，日常工作中，
 ## 二、实现效果
 
 
-### 效果图
+### 先看效果图
 
-![](https://imgkr.cn-bj.ufileos.com/6b95945e-ef34-4384-8ddc-9110dfc0ac57.gif)
+![在这里插入图片描述](http://www.ssbbww.com/u/s/20200601090853u3193-.gif)
 
 
 ### 步骤分析
