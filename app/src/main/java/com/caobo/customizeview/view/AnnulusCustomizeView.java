@@ -56,6 +56,7 @@ public class AnnulusCustomizeView extends View {
 
     /**
      * 如果含有自定义属性，则重写带有三个参数的构造方法
+     *
      * @param context
      * @param attrs
      * @param defStyleAttr
@@ -142,9 +143,9 @@ public class AnnulusCustomizeView extends View {
                 RectF ovalStroke = new RectF(centre - radius, centre - radius,
                         centre + radius, centre + radius);
                 /**
-                    startAngle：从-90°开始，也就是钟表的12点钟位置。
-                    sweepAngle：圆弧扫过的角度
-                    useCenter：设置我们的圆弧在绘画的时候，是否经过圆形，当Paint.Style.STROKE时，true无效果
+                 startAngle：从-90°开始，也就是钟表的12点钟位置。
+                 sweepAngle：圆弧扫过的角度
+                 useCenter：设置我们的圆弧在绘画的时候，是否经过圆形，当Paint.Style.STROKE时，true无效果
                  */
                 canvas.drawArc(ovalStroke, -90, mProgress * 360 / maxProgress, false, mPaint);
                 break;
@@ -159,7 +160,7 @@ public class AnnulusCustomizeView extends View {
         }
 
         // 如果不显示文本，直接return
-        if(mIsShowText==1)
+        if (mIsShowText == 1)
             return;
         // TODO：绘制文本
         // 计算圆弧进度获取文本内容
@@ -175,9 +176,9 @@ public class AnnulusCustomizeView extends View {
         canvas.drawText(percentContext + "%", centre - measureTextWidth / 2, centre + rect.height() / 2, mPaint);
     }
 
-
     /**
      * 根据外部进度传递更新View
+     *
      * @param progress
      */
     public synchronized void setProgress(final int progress) {
@@ -185,9 +186,7 @@ public class AnnulusCustomizeView extends View {
         new Thread() {
             @Override
             public void run() {
-                if (mProgress == 100) {
-                    // 完毕
-                }
+                if (mProgress == 100) {} // 完毕
                 postInvalidate();
             }
         }.start();

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <attr name="annulusColor" format="color"/>
-    <attr name="loadColor" format="color"/>
-    <attr name="annulusWidth" format="dimension"/>
-    <attr name="progress" format="integer"/>
-    <attr name="textColor" format="color"/>
-    <attr name="textSize" format="dimension"/>
-    <attr name="progressType">
+    <attr name="annulusColor" format="color"/>//圆环颜色
+    <attr name="loadColor" format="color"/>//环形进度条加载颜色
+    <attr name="annulusWidth" format="dimension"/>//圆环宽度
+    <attr name="progress" format="integer"/>//圆环进度
+    <attr name="textColor" format="color"/>//文本颜色
+    <attr name="textSize" format="dimension"/>//文本字体大小
+    <attr name="progressType">//环形进度条类型：0.实心 1.空心
         <enum name="fill" value="0"/>
         <enum name="stroke" value="1"/>
     </attr>
-    <attr name="isShowText">
+    <attr name="isShowText">//是否显示文本：0.显示 1.不显示
         <enum name="yes" value="0"/>
         <enum name="no" value="1"/>
     </attr>
